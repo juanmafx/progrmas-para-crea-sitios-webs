@@ -1,3 +1,0 @@
-# soft
-Soft
-Yes
