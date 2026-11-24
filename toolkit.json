@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "tools": [
+    {
+      "id": "filezilla",
+      "name": "FileZilla Client",
+      "category": "deploy",
+      "purpose": "Upload and synchronise site files with a host over SFTP or FTPS.",
+      "homepage": "https://filezilla-project.org/",
+      "download": "https://filezilla-project.org/download.php?type=client",
+      "license": "GPL-2.0-or-later",
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
+      "verification": "Compare the installer's SHA-512 with the checksum published next to the download link.",
+      "safe_use": "Use SFTP or explicit FTPS only. Never plain FTP. Do not let the client store passwords unless a master password is set."
+    },
+    {
+      "id": "notepad-plus-plus",
+      "name": "Notepad++",
+      "category": "edit",
+      "purpose": "Edit HTML, CSS, JavaScript and server-side files with syntax highlighting and plugins.",
+      "homepage": "https://notepad-plus-plus.org/",
+      "download": "https://notepad-plus-plus.org/downloads/",
+      "license": "GPL-3.0-or-later",
+      "platforms": [
+        "windows"
+      ],
+      "verification": "Check the Authenticode signature of the installer and compare its SHA-256 with the release page.",
+      "safe_use": "Install plugins only through the built-in Plugins Admin, which verifies plugin hashes."
+    },
+    {
+      "id": "httrack",
+      "name": "HTTrack Website Copier",
+      "category": "mirror",
+      "purpose": "Make an offline mirror of a site you own or are authorised to copy, for audits, migrations or archiving.",
+      "homepage": "https://www.httrack.com/",
+      "download": "https://www.httrack.com/page/2/en/index.html",
+      "license": "GPL-3.0-or-later",
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "verification": "Prefer the distribution package (apt install httrack) on Linux; on Windows compare the installer hash with the download page.",
+      "safe_use": "Mirror only sites you own or have written permission to copy. Respect robots.txt and rate-limit the crawl."
+    }
+  ]
+}
